@@ -22,6 +22,7 @@ Day 4:
 - Spent far too much time getting a pixel-perfect flowchart.
 - Wireframes are simple, as client is a designer and will have input later in process.
 - The important thing is to have a wireframe for every page. This ensures gaps are identified early in the process.
+- Decided to go with a simple 4-colour labelling system on Trello to indicate an action's difficulty
 - Setup a postgresql development server locally using [Postgres.app](postgressapp.com)
 - Created a new Rails instance with postgres as he database with:
 ```
@@ -32,12 +33,20 @@ $ rails new -d postgresql lisalappea.com
 $ rails db:create
 $ rails db:migrate
 ```
-- Decided to go with a simple 4-colour labelling system on Trello to indicate an action's difficulty
+- Setup git repo on github.com and added:
+  - .gitignore
+  - README.md
+  - LICENSE
+
 
 
 
 ## Tools
 - http://uxchecklist.github.io/
+- Trello
+- Github
+- Heroku
+- Habatica
 
 ## Ideas
 - Use https://github.com/activeadmin/activeadmin to build the admin panel
