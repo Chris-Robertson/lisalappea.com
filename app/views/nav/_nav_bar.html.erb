@@ -15,6 +15,12 @@
       <li class="nav-item">
         <a class="nav-link disabled" href="#">Disabled</a>
       </li>
+      <li class="nav-item active">
+        <%= link_to 'log in', login_path %>
+      </li>
+      <li class="nav-item active">
+        <%= link_to 'log out', logout_path, :method => :delete %>
+      </li>
     </ul>
     <form class="form-inline my-2 my-lg-0">
       <input class="form-control mr-sm-2" type="text" placeholder="Search">

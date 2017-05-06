@@ -47,6 +47,10 @@ $ rails db:migrate
 $ heroku create
 $ git push heroku master
 ```
+- Added the devise gem and ceated its user model
+- Added bootstrap
+- Created scaffolds for items, posts and profiles
+
 
 
 
