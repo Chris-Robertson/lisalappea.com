@@ -10,10 +10,52 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170506054302) do
+ActiveRecord::Schema.define(version: 20170506120231) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "items", force: :cascade do |t|
+    t.integer  "user_id"
+    t.string   "name"
+    t.text     "description"
+    t.string   "category"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+    t.index ["user_id"], name: "index_items_on_user_id", using: :btree
+  end
+
+  create_table "posts", force: :cascade do |t|
+    t.integer  "user_id"
+    t.integer  "item_id"
+    t.string   "title"
+    t.text     "content"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["item_id"], name: "index_posts_on_item_id", using: :btree
+    t.index ["user_id"], name: "index_posts_on_user_id", using: :btree
+  end
+
+  create_table "profiles", force: :cascade do |t|
+    t.integer  "user_id"
+    t.string   "first_name"
+    t.string   "last_name"
+    t.string   "display_name"
+    t.string   "street"
+    t.string   "city"
+    t.string   "state"
+    t.integer  "postcode"
+    t.string   "country"
+    t.integer  "home_phone"
+    t.integer  "work_phone"
+    t.integer  "mobiile_phone"
+    t.string   "facebook"
+    t.string   "instagram"
+    t.string   "twitter"
+    t.datetime "created_at",    null: false
+    t.datetime "updated_at",    null: false
+    t.index ["user_id"], name: "index_profiles_on_user_id", using: :btree
+  end
 
   create_table "users", force: :cascade do |t|
     t.string   "email",                  default: "", null: false
@@ -32,4 +74,8 @@ ActiveRecord::Schema.define(version: 20170506054302) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true, using: :btree
   end
 
+  add_foreign_key "items", "users"
+  add_foreign_key "posts", "items"
+  add_foreign_key "posts", "users"
+  add_foreign_key "profiles", "users"
 end
