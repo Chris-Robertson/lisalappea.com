@@ -1,6 +1,11 @@
 # LisaLappe.com
 The source of lisalappea.com
 
+Heroku url:
+```
+https://glacial-woodland-98272.herokuapp.com/
+```
+
 Day 1:
 - Created Trello board
 - Outlined project concept
@@ -37,7 +42,11 @@ $ rails db:migrate
   - .gitignore
   - README.md
   - LICENSE
-
+- Initialise and deploy to Heroku with:
+```
+$ heroku create
+$ git push heroku master
+```
 
 
 
