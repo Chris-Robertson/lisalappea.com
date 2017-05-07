@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   resources :posts
   resources :profiles
   resources :items
+
   devise_for :users
 
   # Change devise routes

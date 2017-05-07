@@ -56,6 +56,7 @@ Day 5:
 - Fixed and issue with the bootstrap navbar links having a black on hover rule. I think it might have come from the bootstrap4 devise gem I used. It seems like a bit of a waste of time, not hard to quickly throw bootstrap classes on a couple forms.
 - Got the first usable version of the navbar in place. It has links to login and logout, but most of the others are just placeholders untill they have routes and views.
 - Started working out a seed file to save mem time. Quick tip: when using postgres you need to shutdown the server AND quit rails console before you can drop or reset the database.
+- I thought that the bootstrap devise gem was playing up. I decided to remove it. This was a huge mistake. I was initially working in a branch, but I completely messed it up by deleting too many files- I switched back to master but seemed to bring all the problems with me. So i did a git reset --hard master. This was terrible. Everything broke. From there I spent hours retracing my steps, deleting scaffolds and generating new ones, removing the traces of the uninstalled gem (which I don't think was actually causing any trouble). I very nearly deleted the whole project and started again, but I percevered and solved all the issues. Along the way I also learned some new terminal commands regarding the history, which I can see myself using frequently.
 
 
 
