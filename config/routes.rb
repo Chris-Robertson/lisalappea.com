@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
 
+  resources :posts
+  resources :profiles
+  resources :items
   devise_for :users
 
   # Change devise routes
@@ -10,4 +13,5 @@ Rails.application.routes.draw do
   end
 
   root to: 'home#index'
+
 end
