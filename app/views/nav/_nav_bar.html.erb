@@ -21,6 +21,11 @@
           <%= link_to 'log in', login_path, class: 'nav-link' %>
         <% end %>
       </li>
+      <% if user_signed_in? %>
+        <li class="nav-item">
+          <%= link_to 'profile', profile_path(current_user), class: 'nav-link' %>
+        </li>
+      <% end %>
       <li class="nav-item">
         <%= link_to 'cart', root_path, class: 'nav-link' %>
       </li>

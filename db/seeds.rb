@@ -11,7 +11,7 @@ news_posts = 6
 
 num_users.times do
   email = Faker::Internet.unique.email
-  password = Faker::Internet.password
+  password = 'password'
 
   @user = User.create(email: email,
                       password: password,)
