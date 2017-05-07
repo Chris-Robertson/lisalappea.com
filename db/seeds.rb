@@ -37,7 +37,7 @@ num_users.times do
     @item = Item.create(user_id: @user.id,
                         name: Faker::Commerce.product_name,
                         description: Faker::Lorem.paragraph,
-                        category: Faker::Commerce.department)
+                        category: Faker::Commerce.department(1))
     if rand(1)
       Post.create(user_id: @user.id,
                   item_id: @item.id,
