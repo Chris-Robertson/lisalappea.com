@@ -30,7 +30,8 @@ num_users.times do
                  mobiile_phone: Faker::PhoneNumber.phone_number,
                  facebook: Faker::Internet.url('facebook.com'),
                  instagram: Faker::Internet.url('instagram.com'),
-                 twitter: Faker::Internet.url('twitter.com'))
+                 twitter: Faker::Internet.url('twitter.com'),
+                 avatar: Faker::Avatar.image)
 
   rand(max_items).times do
     @item = Item.create(user_id: @user.id,
