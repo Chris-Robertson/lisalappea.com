@@ -57,7 +57,8 @@ Day 5:
 - Got the first usable version of the navbar in place. It has links to login and logout, but most of the others are just placeholders untill they have routes and views.
 - Started working out a seed file to save mem time. Quick tip: when using postgres you need to shutdown the server AND quit rails console before you can drop or reset the database.
 - I thought that the bootstrap devise gem was playing up. I decided to remove it. This was a huge mistake. I was initially working in a branch, but I completely messed it up by deleting too many files- I switched back to master but seemed to bring all the problems with me. So i did a git reset --hard master. This was terrible. Everything broke. From there I spent hours retracing my steps, deleting scaffolds and generating new ones, removing the traces of the uninstalled gem (which I don't think was actually causing any trouble). I very nearly deleted the whole project and started again, but I percevered and solved all the issues. Along the way I also learned some new terminal commands regarding the history, which I can see myself using frequently.
-
+- I worked out how to seed all the user data (profile, items and posts), using the Faker gem. Very cool.
+- I added a randomly generated avater (thanks again Faker) to the user profile, and let the logged in user see their profile.
 
 
 ## Tools
@@ -67,9 +68,15 @@ Day 5:
 - Heroku
 - Habatica
 
+## Gems
+- bootstrap
+- devise
+- faker
+
 ## Ideas
 - Use https://github.com/activeadmin/activeadmin to build the admin panel
 - Use https://github.com/spree/spree for the ecommerce of the site
 
 ## Disasters:
 - Lost at least 12 user stories that I wrote into Trello on the train without an internet connection. In the future I will se their mobile app to add things to Trello.
+- The whole 'uninstall bootstrap-devise-views' kerfuffle.
