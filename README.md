@@ -51,6 +51,11 @@ $ git push heroku master
 - Added bootstrap
 - Created scaffolds for items, posts and profiles
 
+Day 5:
+- Shortened the default devise routes, although my technique taken from the [devise documentation](https://github.com/plataformatec/devise/wiki/How-To:-Change-the-default-sign_in-and-sign_out-routes) seems to have generated redundant routes.
+- Fixed and issue with the bootstrap navbar links having a black on hover rule. I think it might have come from the bootstrap4 devise gem I used. It seems like a bit of a waste of time, not hard to quickly throw bootstrap classes on a couple forms.
+- Got the first usable version of the navbar in place. It has links to login and logout, but most of the others are just placeholders untill they have routes and views.
+- Started working out a seed file to save mem time. Quick tip: when using postgres you need to shutdown the server AND quit rails console before you can drop or reset the database.
 
 
 
