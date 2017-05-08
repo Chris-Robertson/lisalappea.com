@@ -58,8 +58,9 @@ Day 5:
 - Started working out a seed file to save mem time. Quick tip: when using postgres you need to shutdown the server AND quit rails console before you can drop or reset the database.
 - I thought that the bootstrap devise gem was playing up. I decided to remove it. This was a huge mistake. I was initially working in a branch, but I completely messed it up by deleting too many files- I switched back to master but seemed to bring all the problems with me. So i did a git reset --hard master. This was terrible. Everything broke. From there I spent hours retracing my steps, deleting scaffolds and generating new ones, removing the traces of the uninstalled gem (which I don't think was actually causing any trouble). I very nearly deleted the whole project and started again, but I percevered and solved all the issues. Along the way I also learned some new terminal commands regarding the history, which I can see myself using frequently.
 - I worked out how to seed all the user data (profile, items and posts), using the Faker gem. Very cool.
-- I added a randomly generated avater (thanks again Faker) to the user profile, and let the logged in user see their profile.
-
+- I added a randomly generated avatar (thanks again Faker) to the user profile, and let the logged in user see their profile.
+- I started working on the category page. I ended up figuring out how to find all the unique categories in the database, select a random item from each category, select a random photo from that item and then display them all on the categories page. Probably far too much effort for something that will probably mostly be replaced when the site has a few, fixed categories. It was a learning experience, nonetheless.
+- Trying to display a graph of my git history with all the branches I had created, I discovered that the standard `git merge` command fastforwards the branch and merges all the commits. This means that my history just looks like one long `master` branch. This can be avaoided by running `git merge --no-ff` when merging. I will play around with this development process for the rest of the project.
 
 ## Tools
 - http://uxchecklist.github.io/
