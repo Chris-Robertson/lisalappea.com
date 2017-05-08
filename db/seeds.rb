@@ -5,9 +5,10 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-num_users = 25
+num_users = 24
 max_items = 12
 news_posts = 6
+max_photos = 6
 
 num_users.times do
   email = Faker::Internet.unique.email
@@ -43,6 +44,10 @@ num_users.times do
                   item_id: @item.id,
                   title: Faker::Lorem.sentence,
                   content: Faker::Lorem.paragraph)
+    end
+    rand(1..max_photos).times do
+      Photo.create(item_id: @item.id,
+                   path: "http://loremflickr.com/300/300/jewellery?random=#{@item.id}")
     end
   end
 
