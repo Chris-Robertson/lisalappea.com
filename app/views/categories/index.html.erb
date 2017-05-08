@@ -2,10 +2,6 @@
   <div class="card mb-2">
     <%# display a random photo for the chosen item of each category %>
     <%= image_tag("#{item.photos[rand(item.photos.count)].path}") %>
-    <%# <% @photo = item.photos[rand(item.photos.count)] %1> %>
-    <%# <%= @photo.path %1> %>
-    <%# <% @photo_location = @photo.path %1> %>
-    <%# <%= image_tag("#{ @photo_location }") %1> %>
     <%= item.category %>
   </div>
 <% end %>
