@@ -1,4 +1,4 @@
-# LisaLappe.com
+# LisaLappea.com
 The source of lisalappea.com
 
 Heroku url:
@@ -61,6 +61,9 @@ Day 5:
 - I added a randomly generated avatar (thanks again Faker) to the user profile, and let the logged in user see their profile.
 - I started working on the category page. I ended up figuring out how to find all the unique categories in the database, select a random item from each category, select a random photo from that item and then display them all on the categories page. Probably far too much effort for something that will probably mostly be replaced when the site has a few, fixed categories. It was a learning experience, nonetheless.
 - Trying to display a graph of my git history with all the branches I had created, I discovered that the standard `git merge` command fastforwards the branch and merges all the commits. This means that my history just looks like one long `master` branch. This can be avaoided by running `git merge --no-ff` when merging. I will play around with this development process for the rest of the project.
+
+- git clean **VERY DANGEROUS**
+- be careful where you're editing your README file. Don't revert changes! Always commit!
 
 ## Tools
 - http://uxchecklist.github.io/
