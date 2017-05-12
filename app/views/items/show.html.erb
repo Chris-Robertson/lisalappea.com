@@ -2,7 +2,7 @@
 
 <p>
   <strong>User:</strong>
-  <%= @item.user %>
+  <%= @item.user.profile.display_name %>
 </p>
 
 <p>
@@ -19,6 +19,22 @@
   <strong>Category:</strong>
   <%= @item.category %>
 </p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @item.price %>
+</p>
+
+<%= form_for @order_item, remote: true do |f| %>
+  <h4 class="text-right">Unit Price: <span style="color: green"><%= number_to_currency @item.price %></span></h4>
+  <div class="input-group">
+    <%= f.number_field :quantity, value: 1, class: "form-control", min: 1 %>
+    <div class="input-group-btn">
+      <%= f.hidden_field :item_id, value: @item.id %>
+      <%= f.submit "Add to Cart", class: "btn btn-primary" %>
+    </div>
+  </div>
+<% end %>
 
 <%= link_to 'Edit', edit_item_path(@item) %> |
 <%= link_to 'Back', items_path %>

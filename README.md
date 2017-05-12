@@ -47,7 +47,7 @@ $ rails db:migrate
 $ heroku create
 $ git push heroku master
 ```
-- Added the devise gem and ceated its user model
+- Added the devise gem and created its user model
 - Added bootstrap
 - Created scaffolds for items, posts and profiles
 
@@ -64,7 +64,6 @@ Day 5:
 
 - git clean **VERY DANGEROUS**
 - be careful where you're editing your README file. Don't revert changes! Always commit!
-
 ## Tools
 - http://uxchecklist.github.io/
 - Trello

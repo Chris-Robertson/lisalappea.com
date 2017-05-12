@@ -38,7 +38,9 @@ num_users.times do
     @item = Item.create(user_id: @user.id,
                         name: Faker::Commerce.product_name,
                         description: Faker::Lorem.paragraph,
-                        category: Faker::Commerce.department(1))
+                        category: Faker::Commerce.department(1),
+                        price: Faker::Commerce.price,
+                        active: Faker::Boolean.boolean(0.2))
     if rand(1)
       Post.create(user_id: @user.id,
                   item_id: @item.id,
@@ -58,5 +60,11 @@ num_users.times do
                 content: Faker::Lorem.paragraph)
   end
 end
+
+OrderStatus.delete_all
+OrderStatus.create! id: 1, name: "In Progress"
+OrderStatus.create! id: 2, name: "Placed"
+OrderStatus.create! id: 3, name: "Shipped"
+OrderStatus.create! id: 4, name: "Cancelled"
 
 Faker::UniqueGenerator.clear

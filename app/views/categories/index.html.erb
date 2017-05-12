@@ -1,7 +1,7 @@
 <% @random_category_items.each do |item| %>
   <div class="card mb-2">
     <%# display a random photo for the chosen item of each category %>
-    <%= image_tag("#{item.photos[rand(item.photos.count)].path}") %>
+    <%= link_to image_tag("#{item.photos[rand(item.photos.count)].path}", size: '300x300'), shop_path(item: item) %>
     <%= item.category %>
   </div>
 <% end %>
