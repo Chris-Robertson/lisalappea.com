@@ -13,6 +13,7 @@
   <%= link_to 'LL', root_path, class: 'navbar-brand py-0' %>
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <h1 class="nav-item cart-text"><%= render 'layouts/cart_text' %></h1>
     <ul class="navbar-nav mr-auto">
       <li class="nav-item">
         <% if user_signed_in? %>

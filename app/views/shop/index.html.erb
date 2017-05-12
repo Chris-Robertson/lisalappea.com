@@ -1,0 +1,17 @@
+<h1>
+  <%= @category_items.first.category %>
+</h1>
+<% @category_items.each do |item| %>
+  <div class="card my-2">
+    <%= link_to image_tag("#{item.photos[rand(item.photos.count)].path}", size: '280x280'), item_path(item) %>
+    <div class="card-block">
+      <h3 class="card-title">
+        <%= item.name %>
+      </h3>
+      <div class="card-text">
+        <%= item.description %>
+        <%= item.price %>
+      </div>
+    </div>
+  </div>
+<% end %>

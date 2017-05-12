@@ -1,0 +1,24 @@
+<div class="card">
+  <div class="card-title">
+    <div class="card-block">
+    <h4><%= item.name %></h4>
+      <%= form_for order_item, remote: true do |f| %>
+        <h4 class="card-text">
+          Unit Price: 
+          <span style="color: green">
+            <%= number_to_currency order_item.unit_price %>
+          </span>
+        </h4>
+        <div class="card-text">
+          <%= f.number_field :quantity, value: order_item.quantity.to_i, class: "form-control", min: 1 %>
+          <%= f.hidden_field :item_id, value: item.id %>
+        </div>
+        <div class="btn-group">
+          <%= f.submit "Update Quantity", class: "btn btn-primary btn-sm" %>
+          <%= link_to "Delete", order_item, { data: { confirm: "Are you sure you wish to delete the item '#{order_item.item.name}' from your cart?" }, method: :delete, remote: true, class: "btn btn-danger btn-sm" } %>
+        </div>
+        <h4 class="card-text">Total Price: <span style="color: green"><%= number_to_currency order_item.total_price %></span></h4>
+      <% end %>
+    </div>
+  </div>
+</div>
