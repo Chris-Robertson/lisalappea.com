@@ -70,6 +70,7 @@ Day 5:
 - Github
 - Heroku
 - Habatica
+- https://richonrails.com/articles/building-a-shopping-cart-in-ruby-on-rails
 
 ## Gems
 - bootstrap
