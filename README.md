@@ -2,9 +2,7 @@
 The source of lisalappea.com
 
 Heroku url:
-```
-https://glacial-woodland-98272.herokuapp.com/
-```
+`https://lisalappea.herokuapp.com/`
 
 Day 1:
 - Created Trello board
