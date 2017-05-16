@@ -58,6 +58,7 @@ With the user stories and the workflow diagram I wa able to design the database 
 The planning phase of this project was a great leaning experience. At the onset of the project I planned to spend a large amount of my time in the design stage. I spent 
 
 ### Activity | Time Budget
+-------------|------------
 Pain Points / User stories | 1 day
 Workflow Diagram | 1.5 days
 Wireframes | 1.5 days
