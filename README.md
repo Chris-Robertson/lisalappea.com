@@ -1,8 +1,53 @@
 # LisaLappea.com
-The source of lisalappea.com
+A place to buy and sell unique, sustainable jewellery
 
 Heroku url:
 `https://lisalappea.herokuapp.com/`
+
+### Problems Being Solved
+My client is a jewellery maker who sells her jewellery online. She has encountered several pain points:
+- Initaially listing her products on third-party sites such as [Etsy](https://www.etsy.com/au/c/jewelry?ref=catnav-1179), she found there to be complete over-saturation of the market. It was very hard to get exposure on these platforms.
+- My client was heavily involved in her local artist scene and discovered that many potential customers where interested in purchasing items created locally to themselves. This was hard to do on the larger sites.
+- She also found a growing interest in sustainable goods. These were even harder to find on the large sites.
+- Deciding to create her own website, she used some 'build-your-own' hosting services such at [Squarespace](https://www.squarespace.com/), [Shopify](https://www.shopify.com.au/) and [Weebly](https://www.weebly.com/au). These services were found to be expensive, lacking custom features and still difficult for non-technical people to set up the wy they wanted.
+
+To solve these pain points, my client decided to enlist my services to build a custom site to her specifications. The site is to be a platform where a curated selection of local artist can sell their creating to a discerning group of customers interested in sustainable, handmade crafts.
+
+### Workflow Diagram
+A complete workflow diagram was created using [Sketch](https://www.sketchapp.com/). This diagram was invaluable in the early stages of the disign process. Using it I ensured that every feature required for the site was acccounted for, and that there was a sensible flow around the site.
+
+Unfortunately, due to a disastarous file management oversight, this workflow diagram was lost when a git branch was deleted and cleaned.
+
+### Wireframes
+Useing the above workflow diagrarm, I started working on the wireframes for the site. As I knew that the client would ultimately be having a loarge input into the design of the site, I triend to keep the wireframes simple and minimal.
+
+LINK TO WIREFRAMES SCREENSHOT
+
+LINK TO WIREFRAMES PROJECT FILE
+
+### User Stories
+Working closely with the client I was able to develop a large list of the features required for the first implementation of the site to go live. Using this list I wrote the following user stories. These stories were used as the basis for all feature sprints.
+
+*These user stories can all be found on the [Trello board](https://trello.com/b/MNmRKRxm).*
+
+- As a jewellery maker, I want to be able to list my products on a website in order to sell them.
+- As a jewellery seller, I want to be notified when I make a sale, so I can quickly respond and ship the item.
+- As a jewellery buyer, I want to be able to communicate with sellers in order to ask questions about items.
+- As a jewellery buyer, I want to be able to save items to a wishlist so that I can access them again easily.
+- As a jewellery seller, I want to be able to communicate with users via email, in order to let them know about new items and specials.
+- As a jewellery buyer, I want to be able to sort and search through the items, in order to find what I want easier.
+- As a jewellery seller, I want to be able to categorise my listings in order to better organise them and make them easier to browse through.
+- As a jewellery seller, I want to be able to upload photos of my items in order to show them to users.
+- As a jewellery seller, I want to have a profile with contact details and links to my social media, so that I can gain followers and communicate with them.
+- As a site admin, I want to be able to add news posts, in order to keep users informed about changes.
+- As a jewellery buyer, I want to receive email receipts of purchases in order to track my purchases.
+- As a jewellery seller I want to be able to add options to items, in order to offer buyers different materials etc.
+- As a jewellery seller, I want to be able to see information about my items, in order to track sales and views.
+- As a jewellery buyer, I want access to multiple payment options, so that I won't feel restricted in my options.
+- As a jewellery seller, I want add descriptions of my items so I can inform buyers of materials, size, care instructions etc.
+- As a jewellery seller I want to be able to offer discount codes in order to promote my products.
+
+https://trello.com/b/MNmRKRxm
 
 Day 1:
 - Created Trello board
