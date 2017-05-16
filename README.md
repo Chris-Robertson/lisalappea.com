@@ -1,8 +1,7 @@
 # LisaLappea.com
-A place to buy and sell unique, sustainable jewellery
+## *A place to buy and sell unique, sustainable jewellery*
 
-Heroku url:
-`https://lisalappea.herokuapp.com/`
+[lisalappea.com on Heroku](https://lisalappea.herokuapp.com/)
 
 ### Problems Being Solved
 My client is a jewellery maker who sells her jewellery online. She has encountered several pain points:
@@ -16,19 +15,21 @@ To solve these pain points, my client decided to enlist my services to build a c
 ### Workflow Diagram
 A complete workflow diagram was created using [Sketch](https://www.sketchapp.com/). This diagram was invaluable in the early stages of the disign process. Using it I ensured that every feature required for the site was acccounted for, and that there was a sensible flow around the site.
 
-Unfortunately, due to a disastarous file management oversight, this workflow diagram was lost when a git branch was deleted and cleaned.
+Unfortunately, due to a disastarous file management oversight, this workflow diagram was lost when a git branch was deleted and cleaned. The below screen shot is all that remains.
+
+![Workflow Diagram](docs/images/workflow_diagram.png)
 
 ### Wireframes
 Useing the above workflow diagrarm, I started working on the wireframes for the site. As I knew that the client would ultimately be having a loarge input into the design of the site, I triend to keep the wireframes simple and minimal.
 
-LINK TO WIREFRAMES SCREENSHOT
+![Wireframes](docs/images/wireframes.png)
 
-LINK TO WIREFRAMES PROJECT FILE
+The Sketch project file can be found [here](docs/lisalappea_wireframes.sketch).
 
 ### User Stories
 Working closely with the client I was able to develop a large list of the features required for the first implementation of the site to go live. Using this list I wrote the following user stories. These stories were used as the basis for all feature sprints.
 
-*These user stories can all be found on the [Trello board](https://trello.com/b/MNmRKRxm).*
+***These user stories can all be found on the [Trello board](https://trello.com/b/MNmRKRxm).***
 
 - As a jewellery maker, I want to be able to list my products on a website in order to sell them.
 - As a jewellery seller, I want to be notified when I make a sale, so I can quickly respond and ship the item.
@@ -47,7 +48,13 @@ Working closely with the client I was able to develop a large list of the featur
 - As a jewellery seller, I want add descriptions of my items so I can inform buyers of materials, size, care instructions etc.
 - As a jewellery seller I want to be able to offer discount codes in order to promote my products.
 
-https://trello.com/b/MNmRKRxm
+### Entity Relationship Diagram
+With the user stories and the workflow diagram I wa able to design the database tables and relationships for the site. I used the online tool [DbDesigner](http://dbdesigner.net/) to visualise the structure of the database.
+
+![ERD](docs/images/erd.png)
+
+### Project Plan And Estimation
+
 
 Day 1:
 - Created Trello board
