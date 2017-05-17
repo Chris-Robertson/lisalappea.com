@@ -59,7 +59,7 @@ With the user stories and the workflow diagram I wa able to design the database 
 
 This project had a very tight deadline of about 12 days. Below is the initial time budget I designed for the project.
 
-### Activity | Time Budget
+Activity | Time Budget
 ---------|------------
 Pain Points / User stories | 1 day
 Workflow Diagram | 1.5 days
