@@ -1,7 +1,9 @@
 # LisaLappea.com
-## *A place to buy and sell unique, sustainable jewellery*
+### *A place to buy and sell unique, sustainable jewellery*
 
 [lisalappea.com on Heroku](https://lisalappea.herokuapp.com/)
+
+# TABLE OF CONTENTS
 
 ### Problems Being Solved
 My client is a jewellery maker who sells her jewellery online. She has encountered several pain points:
@@ -29,7 +31,7 @@ The Sketch project file can be found [here](docs/lisalappea_wireframes.sketch).
 ### User Stories
 Working closely with the client I was able to develop a large list of the features required for the first implementation of the site to go live. Using this list I wrote the following user stories. These stories were used as the basis for all feature sprints.
 
-***These user stories can all be found on the [Trello board](https://trello.com/b/MNmRKRxm).***
+**These user stories can all be found on the [Trello board](https://trello.com/b/MNmRKRxm).**
 
 - As a jewellery maker, I want to be able to list my products on a website in order to sell them.
 - As a jewellery seller, I want to be notified when I make a sale, so I can quickly respond and ship the item.
@@ -55,20 +57,45 @@ With the user stories and the workflow diagram I wa able to design the database 
 
 ### Project Plan And Estimation
 
-The planning phase of this project was a great leaning experience. At the onset of the project I planned to spend a large amount of my time in the design stage. I spent 
+This project had a very tight deadline of about 12 days. Below is the initial time budget I designed for the project.
 
-###Activity | Time Budget
+### Activity | Time Budget
 ---------|------------
 Pain Points / User stories | 1 day
 Workflow Diagram | 1.5 days
 Wireframes | 1.5 days
 Entity Relationship Diagram | 1 day
-***Planning Phase Total*** | ***5 days***
+**Planning Phase Total** | **5 days**
 Rails project scaffolding | 1 day
 Bootstrap/Devise setup | 1 day
 Database seeding | 0.5 days
 Basic styling | 0.5 days
+Payment API Configuration | 1 day
+Additional APIs | 2 days
+Testing and Review | 1 day
+**Build Phase Total** | **7 days**
 
+The planning phase went by without a hitch. The hardest decision I had to mmake was which wireframing and prototyping software to use. I had used [Figma](https://www.figma.com) on previous projects but decided to go with [Sketch](https://www.sketchapp.com/) do get experience with what seems to be the industry standard software. I was very happy with my choice and will probably stick with Sketch for future projects.
+
+Moving on to the build phase of the project, the first day or so went smoothly. As I had spent a large amount of time planning and had a detailed ERD and workflow diagram, the initial Rails project setup of scaffolding and routing was failry straightforward. I identified many issues in the planning phase that were easily worked out that would have caused serious issues if not discovered until the build phase.
+
+Moving farther aloing in the build process I encoutered issues that I had not forseen. The major one being the shopping cart implementation. During planning I had identified a shopping cart system as being critical to the MVP, but had not thought about how exactly it would be implemented. This turned into a major hurdle as I knew it was a critical feature and the project could not move forward without it. Initially I tried to implement the cart completely in Ruy and Rails, but was unable to get it to work. I then spent some time researching common solutions and discovered [Spree](https://spreecommerce.com/), a gem that implements an entire ecommerce solution. I found that Spree was a very popular solution for this problem and I went about integrating it in to the project.
+
+The Spree integration took far longer than I had thought it would. I did learn a lot about third party gem integration, including how to remove gems and reconfigure your application. In the end, I managed to install Spree into the project. Once spree was installed I started looking through the code and realised it would take me days, maybe an entire week, to configure it into somehting usable for the site. Being days behind my schedule already I decided to scrap the Spree gem and revert the project.
+
+During this process of removing Spree and reverting the repository I made a few major mistakes in my handling of git branches and lost a not insignificant amount of my work. Needless to say, they are not mistakes that I will make again. Hopefully.
+
+After moving away from the Spree option I discovered [this tutorial](https://richonrails.com/articles/building-a-shopping-cart-in-ruby-on-rails) on implementing a shopping cart in Rails with just a small amount of AJAX. This shopping cart system was finally implemented, but at this stage the project was hugely behind its already cramped schedule and I was not able to implement many of the other features I had planned.
+
+As this is an actual product that will eventually be deployed, I will continue to work on it using the Trello board to manage priorities.
+
+During this project I learned a great deal about Ruby on Rails and am confident that I will be able to get projects up and running a lot quicker in the future.
+
+### Tools And Methodologies
+
+#### Trello
+[Trello board](https://trello.com/b/MNmRKRxm)
+I used Trello extensively throughout this project. I find it an invaluable tool for keeping track of what needs to be done and breaking problems down into little pieces that can easily be worked on. 
 
 Day 1:
 - Created Trello board
