@@ -3,7 +3,9 @@
 
 [lisalappea.com on Heroku](https://lisalappea.herokuapp.com/)
 
-# TABLE OF CONTENTS
+## TABLE OF CONTENTS
+
+1. [Problems Being Solved](https://github.com/Chris-Robertson/lisalappea.com/blob/master/README.md#table-of-contents)
 
 ### Problems Being Solved
 My client is a jewellery maker who sells her jewellery online. She has encountered several pain points:
