@@ -5,7 +5,17 @@
 
 ## TABLE OF CONTENTS
 
-1. [Problems Being Solved](#table-of-contents)
+1. [Problems Being Solved](#problems-being-solved)
+1. [Workflow Diagram](#workflow-diagram)
+1. [Wireframes](#wireframes)
+1. [User Stories](#user-stories)
+1. [Entity Relationship Diagram](#entity-relationship-diagram)
+1. [Project Plan And Estimation](#project-plan-and-estimation)
+1. [Tools And Methodologies](#tools-and-methodologies)
+   1. [Trello](#trello)
+   1. [Slack](#slack)
+   1. [GitHub](#github)
+   1. [RuboCop](#rubocop)
 
 ### Problems Being Solved
 My client is a jewellery maker who sells her jewellery online. She has encountered several pain points:
