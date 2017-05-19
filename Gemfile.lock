@@ -52,6 +52,8 @@ GEM
     bootstrap (4.0.0.alpha6)
       autoprefixer-rails (>= 6.0.3)
       sass (>= 3.4.19)
+    braintree (2.75.0)
+      builder (>= 2.0.0)
     builder (3.2.3)
     byebug (9.0.6)
     coderay (1.1.1)
@@ -70,6 +72,10 @@ GEM
       railties (>= 4.1.0, < 5.1)
       responders
       warden (~> 1.2.3)
+    dotenv (2.2.1)
+    dotenv-rails (2.2.1)
+      dotenv (= 2.2.1)
+      railties (>= 3.2, < 5.2)
     erubis (2.7.0)
     execjs (2.7.0)
     faker (1.7.3)
@@ -184,9 +190,11 @@ DEPENDENCIES
   better_errors
   binding_of_caller
   bootstrap (~> 4.0.0.alpha6)
+  braintree (~> 2.75.0)
   byebug
   coffee-rails (~> 4.2)
   devise
+  dotenv-rails
   faker
   jbuilder (~> 2.5)
   jquery-rails
