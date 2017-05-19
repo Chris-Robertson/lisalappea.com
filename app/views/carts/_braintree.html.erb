@@ -24,8 +24,9 @@
 // We generated a client token for you so you can test out this code
 // immediately. In a production-ready integration, you will need to
 // generate a client token on your server (see section below).
-var authorization = @token
+var authorization = token
 var submit = document.querySelector('input[type="submit"]');
+var form = document.querySelector('#checkout-form');
 
 braintree.client.create({
   authorization: authorization
@@ -67,8 +68,27 @@ braintree.client.create({
       // Handle error in Hosted Fields creation
       return;
     }
-
     submit.removeAttribute('disabled');
+
+    form.addEventListener('submit', function (event) {
+
+      event.preventDefault();
+
+      hostedFieldsInstance.tokenize(function (tokenizeErr, payload) {
+        if (tokenizeErr) {
+          // Handle error in Hosted Fields tokenization
+          return;
+        }
+
+      // Put `payload.nonce` into the `payment_method_nonce` input, and then
+      // submit the form. Alternatively, you could send the nonce to your server
+      // with AJAX.
+      document.querySelector('input[name="payment_method_nonce"]').value = payload.nonce;
+      form.submit();
+
+      });
+            
+    }, false);
   });
 });
 </script>
