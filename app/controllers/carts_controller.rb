@@ -8,4 +8,7 @@ class CartsController < ApplicationController
     @order_items = current_order.order_items
     @token = Braintree::ClientToken.generate
   end
+
+  def checkout
+  end
 end
