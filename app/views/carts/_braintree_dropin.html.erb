@@ -1,10 +1,27 @@
 <script src="https://js.braintreegateway.com/web/dropin/1.0.2/js/dropin.min.js"></script>
 
-<div id="dropin-container"></div>
-<button id="submit-button">Request payment method</button>
+<%= form_tag checkout_path, method: "post", id: "payment-form" do %>
+  <section>
+    <div class="bt-drop-in-wrapper">
+      <div id="bt-dropin"></div>
+    </div>
+
+    <label for="amount">
+      <span class="input-label">Amount</span>
+      <div class="input-wrapper amount-wrapper">
+        <input id="amount" name="amount" type="tel" min="1" placeholder="Amount" value="10">
+      </div>
+    </label>
+  </section>
+
+  <button class="button" id="submit-button" type="submit"><span>Test Transaction</span></button>
+<% end %>
+
+<%# <div id="dropin-container"></div> %>
+<%# <button id="submit-button">Request payment method</button> %>
 <script>
   var button = document.querySelector('#submit-button');
-  var clientToken = "<%= @token %>"
+  var clientToken = "<%= @token %>";
 
   braintree.dropin.create({
     authorization: clientToken,

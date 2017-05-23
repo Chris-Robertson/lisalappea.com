@@ -9,6 +9,7 @@ Rails.application.routes.draw do
 
   get 'categories', to: 'categories#index'
   get 'shop', to: 'shop#index'
+  post 'checkout', to: 'carts#checkout'
 
   devise_for :users
   # Change devise routes
